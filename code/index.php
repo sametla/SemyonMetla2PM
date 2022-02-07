@@ -21,3 +21,15 @@ echo ($myFavNumber - $myAge -4)."<br>";
 $lastMonth = 1187.23;
 $thisMonth = 1089.98;
 echo ($lastMonth-$thisMonth)."<br>";
+
+echo "<br><br> 11. Multiplication and Division <br><br>";
+$num_languages = 4;
+$months = 11;
+$days = $months * 16;
+$daysPerLanguages = $days;
+echo $daysPerLanguages."<br>";
+
+echo "<br><br> 12. Power <br><br>";
+echo 8**2;
+
+
