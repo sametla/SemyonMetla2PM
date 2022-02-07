@@ -32,4 +32,14 @@ echo $daysPerLanguages."<br>";
 echo "<br><br> 12. Power <br><br>";
 echo 8**2;
 
+echo "<br><br> 13. Assignment operators <br><br>";
+$myNum = 6;
+$answer = $myNum;
+$answer +=2;
+$answer *=2;
+$answer -=2;
+$answer /=2;
+$answer -=$myNum;
+echo $answer."<br>";
+
 
