@@ -93,3 +93,13 @@ foreach ($arr4 as $value) {
         break;
     }
 }
+
+echo "<br><br> 15. Functions <br><br>";
+
+function printStringReturnNumber(string $string):int
+{
+    echo $string."<br>";
+    return 1;
+}
+$myNum = printStringReturnNumber('hello');
+echo $myNum;
