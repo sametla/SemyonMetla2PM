@@ -42,4 +42,54 @@ $answer /=2;
 $answer -=$myNum;
 echo $answer."<br>";
 
+echo "<br><br> 14. Math functions <br><br>";
+$a = 10;
+$b = 3;
+echo ($a%$b)."<br>";
+$st = pow(2, 10);
+echo $st."<br>";
+echo sqrt(245)."<br>";
+$array = [4,2,5,19,13,0,10];
+$sum = 0;
+foreach ($array as $value)
+    $sum = $sum + $value;
+echo sqrt($sum)."<br>";
 
+echo round(sqrt(379), 0)."<br>";
+echo round(sqrt(379), 1)."<br>";
+echo round(sqrt(379), 2)."<br>";
+$arr2 = array ('ceil' => ceil(sqrt(587)), 'floor' => floor(sqrt(587)));
+echo $arr2['ceil']."<br>";
+echo $arr2['floor']."<br>";
+echo min(4, -2, 5, 19, -130, 0, 10)."<br>";
+echo max(4, -2, 5, 19, -130, 0, 10)."<br>";
+echo rand(1, 100)."<br>";
+$arr3 = [10];
+for ($i = 0; $i < 10; $i++)
+{
+   $arr[$i] = rand(1,100);
+   echo $arr[$i]." ";
+}
+echo "<br>".abs(($b-$a))."<br>";
+$arr3 = [1, 2, -1, -2, 3, -3];
+foreach ($arr3 as $value) {
+    $value = abs($value);
+    echo $value." ";
+}
+
+$a = 228;
+$dividers = [];
+for ($i = 1; $i <= $a; $i++)
+    if ($a % $i == 0)
+        $dividers[] = $i;
+print_r($dividers);
+$arr4 = [1,2,3,4,5,6,7,8,9,10];
+$sum = 0;
+foreach ($arr4 as $value) {
+    $sum += $value;
+    if ($sum > 10)
+    {
+        echo "<br>".$value. "<br>";
+        break;
+    }
+}
