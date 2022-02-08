@@ -246,8 +246,14 @@ $arr = [1,2,3];
 $sum = array_sum($arr);
 echo (sizeof($arr) == 3) ? "{$sum}<br>" : "oops" ;
 
+echo "<br><br> 19. Cycles <br><br>";
 
-
+for ($i = 1; $i <= 20; $i++)
+{
+    for ($j = 1; $j <= $i; $j++)
+        echo "x";
+    echo "<br>";
+}
 
 
 
