@@ -255,6 +255,29 @@ for ($i = 1; $i <= 20; $i++)
     echo "<br>";
 }
 
+echo "<br><br> 20. Function Combinations <br><br>";
+
+$array = [1,2,3,4,5,6,7,8,9];
+echo array_sum($array)/sizeof($array)."<br>";
+
+echo array_sum(range(1, 100))."<br>";
+
+$arr4 = [4,9,16,25];
+print_r(array_map('sqrt', $arr4));
+
+$keys = range('a', 'z');
+$vals = range(1,26);
+$arr3= array_combine($keys, $vals);
+echo "<br>";
+print_r($arr3);
+echo "<br>";
+
+$numbers = '1234567890';
+$arr4 = str_split($numbers, 2);
+	$res = array_sum($arr4);
+	echo $res;
+
+
 
 
 
