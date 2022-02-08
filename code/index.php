@@ -152,4 +152,60 @@ function arraySum($num)
 }
 echo "<br>".arraySum(155)."<br>";
 
+echo "<br><br> 17. Arrays <br><br>";
+$arr=[];
+for ($i = 1; $i <= 10; $i++)
+{
+    $arr[$i-1]='';
+    for ($j = 0; $j < $i; $j++)
+        $arr[$i-1].='x';
+}
+print_r($arr);
+
+function arrayFill($vol, int $num)
+{
+    $newArr = [];
+    for ($i = 1; $i <= $num; $i++) {
+        $newArr[$i - 1] = '';
+        for ($j = 0; $j < $i; $j++)
+            $newArr[$i - 1] .= $vol;
+    }
+    return $newArr;
+}
+echo "<br>";
+print_r(arrayFill('x',5));
+echo "<br>";
+$arr2 = [[1,2,3],[4,5],[6]];
+$sum = 0;
+foreach ($arr2 as $value)
+{
+    foreach ($value as $num)
+    {
+        $sum += $num;
+    }
+}
+echo "<br>".$sum."<br>";
+
+$arr3 = [];
+$counter = 1;
+for($i = 0; $i < 3; $i++)
+    for($j = 0; $j < 3; $j++)
+        $arr3[$i][$j] = $counter++;
+print_r($arr3);
+
+$arr4=[2,5,3,9];
+$result = $arr4[0]*$arr4[1]+$arr4[2]*$arr4[3];
+echo "<br>".$result."<br>";
+
+$user = ['name' => 'Semyon', 'surname' => 'Metla', 'patronymic' => 'Andreevich', 6, 5, 2002];
+echo $user['surname']." ".$user['name']." ".$user['patronymic']."<br>";
+
+$date = ['year' => 2022, 'month' => '02', 'day' => '08'];
+echo "Today is {$date['year']}-{$date['month']}-{$date['day']}<br>";
+
+$arr = ['a', 'b', 'c', 'd', 'e'];
+echo sizeof($arr)."<br>";
+echo $arr[sizeof($arr)-1]."<br>";
+echo $arr[sizeof($arr)-2]."<br>";
+
 
