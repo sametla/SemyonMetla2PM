@@ -208,4 +208,48 @@ echo sizeof($arr)."<br>";
 echo $arr[sizeof($arr)-1]."<br>";
 echo $arr[sizeof($arr)-2]."<br>";
 
+echo "<br><br> 18. if/else Construction <br><br>";
+
+function moreThan10(int $a, int $b):bool
+{
+    if ($a+$b > 10) return true;
+    else return false;
+}
+if (moreThan10(2, 9)) echo "Bingo!<br>";
+
+function equal(int $a, int $b):bool
+{
+    if ($a === $b ) return true;
+    else return false;
+}
+if (equal(5,5)) echo "hmm yes the 5 here is made out of 5<br>";
+
+$test = 0;
+echo ($test == 0) ? 'true<br>' : 'false<br>';
+
+$age = rand(0, 150);
+echo "age = {$age}<br>";
+if ($age < 10) echo "{$age} is lower than 10<br>";
+else if ($age > 99) echo "{$age} is higher than 99<br>";
+else
+{
+    $sum = 0;
+    for ($i = 0; $i < strlen($age); $i++)
+    {
+        $sum += $age%10;
+        $age/=10;
+    }
+    echo ($sum > 9) ? "sum is two-digit<br>" : "sum is one-digit<br>";
+}
+
+$arr = [1,2,3];
+$sum = array_sum($arr);
+echo (sizeof($arr) == 3) ? "{$sum}<br>" : "oops" ;
+
+
+
+
+
+
+
 
