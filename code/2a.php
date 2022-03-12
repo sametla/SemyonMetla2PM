@@ -9,10 +9,20 @@ session_start();
 </head>
 
 <body>
-<p><a href= "http://php-docker.local:8080/2b.php?">Go to 2b</a></p>
+<p>
+    <a href= "http://php-docker.local:8080/2b.php?">Go to 2b</a>
+    <a href= "http://php-docker.local:8080/2c.php?">Go to 2c</a>
+</p>
 <form method="post">
     <p><textarea required name = "textToProcess" placeholder="Введите текст"></textarea></p>
     <p><input type="submit" name="submitButton" value="Посчитать"></p>
+    <ul>
+        <?php
+        foreach ($_SESSION['info'] as $key => $value) {
+            echo "<li>$key : $value</li>";
+        }
+        ?>
+    </ul>
 </form>
 </body>
 </html>
