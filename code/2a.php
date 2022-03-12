@@ -9,6 +9,7 @@ session_start();
 </head>
 
 <body>
+<p><a href= "http://php-docker.local:8080/2b.php?">Go to 2b</a></p>
 <form method="post">
     <p><textarea required name = "textToProcess" placeholder="Введите текст"></textarea></p>
     <p><input type="submit" name="submitButton" value="Посчитать"></p>
@@ -24,3 +25,6 @@ if( $_POST["textToProcess"] )
     $_SESSION['textInfo'] .= strlen($_POST['textToProcess']) . ' символа(-ов)<br>';
 }
 echo $_SESSION['textInfo'];
+
+if (($_SESSION["name"]) && ($_SESSION["surname"]) && ($_SESSION["age"]))
+    echo "<br>Person: {$_SESSION['name']} {$_SESSION['surname']}. Age: {$_SESSION['age']} ";
