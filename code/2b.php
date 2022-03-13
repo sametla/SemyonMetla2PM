@@ -17,6 +17,7 @@ session_start();
     <p><input type="submit" name="submitButton" value="Save"></p>
     <ul>
         <?php
+        if($_SESSION['info'])
         foreach ($_SESSION['info'] as $key => $value) {
             echo "<li>$key : $value</li>";
         }
